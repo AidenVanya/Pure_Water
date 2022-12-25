@@ -1,0 +1,231 @@
+.about_us {
+    &_image {
+        background: url(../img/about-us.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 75vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .banner-text {
+            color: #c9e2d9;
+            z-index: 98;
+            text-align: center;
+            h2,
+            h3 {
+                font-weight: bold;
+                line-height: 1.9;
+                font-size: 40px;
+            }
+        }
+    }
+    &_text_container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: wheat;
+        .text-title {
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+        .about_us_text {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+    }
+    .support {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .icon-box {
+            text-align: center;
+            cursor: pointer;
+            .icon {
+                padding-bottom: 20px;
+                height: 110px;
+                &:hover i {
+                    color: #5685d1;
+                    background-color: rgba(255, 255, 255, 1);
+                }
+                i {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    color: #fff;
+                    border-radius: 50%;
+                    font-size: 50px;
+                    padding: 25px;
+                    transition: all 0.7s;
+                    height: 100px;
+                }
+            }
+            .icon-content {
+                color: #fff;
+                .icon-title {
+                    font-weight: bold;
+                    position: relative;
+                    padding-bottom: 10px;
+                    &::before {
+                        content: "";
+                        width: 50px;
+                        height: 1px;
+                        background: #222;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        margin-left: -25px;
+                        z-index: 100;
+                    }
+                }
+                .icon-text {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .brand {
+        position: relative;
+        margin-bottom: 50px;
+        &-title {
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+        }
+        .about-carousel {
+            .item {
+                background-color: #fff;
+                .brand-img {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .about_us {
+        &_image {
+            background: url(../img/about-us.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 40vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .banner-text {
+                color: #c9e2d9;
+                z-index: 98;
+                text-align: center;
+                padding-top: 77px;
+                h2,
+                h3 {
+                    font-weight: bold;
+                    line-height: 1.9;
+                    font-size: 20px;
+                }
+            }
+        }
+        &_text_container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            color: wheat;
+            text-align: center;
+            .text-title {
+                font-weight: bold;
+                text-align: center;
+                color: #fff;
+            }
+            .about_us_text {
+                font-size: 20px;
+                line-height: 1.7;
+            }
+        }
+        .support {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            .icon-box {
+                text-align: center;
+                cursor: pointer;
+                .icon {
+                    padding-bottom: 20px;
+                    height: 110px;
+                    &:hover i {
+                        color: #5685d1;
+                        background-color: rgba(255, 255, 255, 1);
+                    }
+                    i {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        color: #fff;
+                        border-radius: 50%;
+                        font-size: 50px;
+                        padding: 25px;
+                        transition: all 0.7s;
+                        height: 100px;
+                    }
+                }
+                .icon-content {
+                    color: #fff;
+                    .icon-title {
+                        font-weight: bold;
+                        position: relative;
+                        padding-bottom: 10px;
+                        &::before {
+                            content: "";
+                            width: 50px;
+                            height: 1px;
+                            background: #222;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            margin-left: -25px;
+                            z-index: 100;
+                        }
+                    }
+                    .icon-text {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .brand {
+            position: relative;
+            margin-bottom: 50px;
+            &-title {
+                text-align: center;
+                font-weight: bold;
+                color: #fff;
+                margin-top: 20px;
+            }
+            .about-carousel {
+                .item {
+                    background-color: #fff;
+                    .brand-img {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

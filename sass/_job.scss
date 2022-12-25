@@ -1,0 +1,104 @@
+.job {
+    &_image {
+        background: url(../img/job.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 100px;
+        height: 75vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-content {
+        .text-title {
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        .job-text {
+            color: #c9e2d9;
+            font-size: 20px;
+            line-height: 1.7;
+        }
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .job {
+        &_image {
+            background: url(../img/job.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: 93px;
+            height: 37vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-content {
+            text-align: center;
+            .text-title {
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                font-weight: bold;
+            }
+            .job-text {
+                color: #c9e2d9;
+                font-size: 20px;
+                line-height: 1.7;
+            }
+        }
+    }
+}
+.urunler {
+    margin: 30px 0;
+    .brand-title {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+    .job-carousel {
+        .urunbox {
+            border: 1px solid #e7e7e7;
+            padding: 5px;
+            background: #fff;
+            box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+            transition: all 0.5s;
+            .urunresim {
+                border-bottom: 2px solid #e7e7e7;
+            }
+            .urunadi {
+                font-weight: bold;
+                text-align: center;
+                margin-top: 15px;
+                color: #6f6f6f;
+                font-size: 20px;
+                font-family: "Raleway", sans-serif;
+                height: 64px;
+            }
+            .urunfiyat {
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+                color: green;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            .urunsepet {
+                background: green;
+                padding: 10px 0px;
+                font-weight: bold;
+                text-align: center;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
